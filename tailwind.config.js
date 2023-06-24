@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pop: "'Poppins', sans-serif"
+        pop: "'Poppins', sans-serif",
+        mul: "'Mulish', sans-serif"
       }
     },
   },

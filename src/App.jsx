@@ -3,17 +3,15 @@ import { Navbar, Hero } from "./components";
 
 const App = () => (
   <div className="overflow-hidden bg-white ">
-    <div className="px-16 border-b-4 shadow-xl border-white-500">
+    <div className="border-b-4 shadow-md border-white-500">
       <div>
         <Navbar />
       </div>
     </div>
 
-    {/* <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className="">
         <Hero />
-      </div>
-    </div> */}
+    </div>
     
     {/* <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>

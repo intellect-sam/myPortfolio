@@ -28,8 +28,8 @@ const Navbar = () => {
           </ul>
           <div className="justify-end">
 
-              <button className="justify-end px-2 py-2 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700">
-                Download CV
+              <button className="justify-end px-2 py-1 text-sm font-bold text-white bg-red-700 rounded shadow-md hover:bg-blue-700">
+                Resume
               </button>
 
           </div>
