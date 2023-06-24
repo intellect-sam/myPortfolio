@@ -8,10 +8,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between w-1/2 py-6 mt-6 md:container md:mx-auto px-14 navbar">
-      <a href="/" className="font-bold font-pop">Samuel.dev</a>
+    <nav className="flex justify-between py-4 md:items-center md:mt-6 md:py-6 md:mx-80 md:px-14">
+      <a href="/" className="font-bold font-pop">Sam.Dev</a>
 
-      <div className="flex gap-4">
+      <div className="flex justify-between md:gap-8">
           <ul className="items-center justify-end flex-1 hidden list-none sm:flex">
             {navLinks.map((nav, index) => (
               <li
@@ -26,9 +26,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="px-2 py-2 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700">
-            Download CV
-          </button>
+          <div className="justify-end">
+
+              <button className="justify-end px-2 py-2 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700">
+                Download CV
+              </button>
+
+          </div>
       </div>
 
 
@@ -42,7 +46,7 @@ const Navbar = () => {
 
         <div
           className={`${
-            !toggle ? "hidden" : "flex"
+            !toggle ? "hidden" : "flex-col gap-10"
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="flex flex-col items-start justify-end flex-1 list-none">
@@ -57,6 +61,9 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+          <button className="justify-end px-2 py-2 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700">
+                Download CV
+              </button>
           </ul>
         </div>
       </div>
