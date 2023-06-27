@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { FaBars, FaTimes} from 'react-icons/Fa'
 import { navLinks } from "../constants";
+import styles from "../style";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="flex justify-between px-10 py-6 md:items-center md:mt-6 md:py-6 md:mx-80 md:px-14">
+    <nav className={`flex justify-between px-10 py-6 md:items-center md:py-10 md:mx-80 md:px-14 ${styles.textWhite}`} >
       <a href="/" className="text-2xl font-bold font-pop">Sam.Dev</a>
 
       <div className="flex justify-between md:gap-8">
@@ -16,7 +17,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-pop font-light cursor-pointer hover:text-blue-800 text-[10px] ${
-                  active === nav.title ? "text-black" : "text-dimBlack"
+                  active === nav.title ? "text-white" : "text-dimBlack"
                 } ${index === navLinks.length - 1 ? "mr-0" : "mr-6"}`}
                 onClick={() => setActive(nav.title)}
               >
@@ -53,14 +54,14 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex-col gap-10"
-          } p-6 bg-white z-40 absolute top-20 right-0 left-0 w-full h-screen`}
+          } p-6 bg-[#030712] z-40 absolute top-20 right-0 left-0 w-full h-screen`}
         >
           <ul className="flex flex-col items-center justify-center py-40 list-none">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-pop font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-black" : "text-dimBlack"
+                  active === nav.title ? "text-white" : "text-dimBlack"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
