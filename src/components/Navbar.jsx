@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes} from 'react-icons/Fa'
 import { navLinks } from "../constants";
 import styles from "../style";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -65,6 +66,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
+                {/* <Link to={nav.id>{nav.title}</Link> */}
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
