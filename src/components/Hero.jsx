@@ -1,6 +1,6 @@
 
 import { js, css, html, reactlogo, boot, tailwind, code, code2 } from "../assets/images"
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/Bs'
+// import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/Bs'
 import styles from "../style"
 
 
@@ -21,9 +21,9 @@ const Hero = () => {
             I not only build but also contribute to the aesthetic aspects of the products I work on 👨‍💻
           </p>
           <div className="flex justify-center gap-5 text-2xl font-light md:justify-start md:items-start">
-            <BsGithub />
+            {/* <BsGithub />
             <BsTwitter />
-            <BsLinkedin/>
+            <BsLinkedin/> */}
           </div>
             <div className="py-10">
               <div>
