@@ -16,7 +16,7 @@ const Hero = () => {
             Aluko O. Samuel.
           </div>
           <p className="py-4 my-3 md:text-xl font-light text-justify text-[#475569] md:text-justify md:w-2/3">
-            I'm a software engineer focused on building beautiful interfaces and experiences, 
+            I`m a software engineer focused on building beautiful interfaces and experiences, 
             specializing in crafting exceptional digital experiences. With a keen eye for design, 
             I not only build but also contribute to the aesthetic aspects of the products I work on 👨‍💻
           </p>
