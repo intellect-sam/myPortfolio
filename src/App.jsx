@@ -1,6 +1,7 @@
 // import styles from "./style";
 import { Navbar, Hero, Home, About } from "./components";
 
+
 const App = () => (
   <div className="overflow-hidden">
     <div className="bg-[#030712] border-b-4 shadow-md border-black">
@@ -34,6 +35,7 @@ const App = () => (
       </div>
     </div> */}
   </div>
+
 );
 
 export default App;

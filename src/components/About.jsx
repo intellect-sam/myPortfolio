@@ -2,10 +2,15 @@ import styles from "../style"
 import Sam from "../assets/images/sam.png"
 import back from "../assets/images/back.png"
 import {BsPerson} from "react-icons/Bs"
+import Zoom from "react-reveal/Zoom"
 
 
 const About = () => {
     return (
+        <Zoom>
+
+
+   
         <div className="items-center justify-center md:px-[400px]">
         <div className="justify-center px-10 py-10 text-justify text-[#b5bcbf]  md:w-[800px] md:flex md:gap-8">
             <div className="flex flex-col gap-5 font-light">
@@ -41,13 +46,12 @@ const About = () => {
 
 
             <div className="flex justify-center w-full md:mt-20">
-
                 <div className="md:absolute md:visible w-60 h-60 opacity-20">
                 <img src={back} alt="" />
                 </div>
 
-                <div className="absolute md:bottom-[-360px] md:right-[510px] bottom-[-760px] right-[30px] border-4 border-[#e8b025] rounded-xl w-[170px] h-[175px]">
-                </div>
+                {/* <div className="absolute md:bottom-[-360px] md:right-[510px] bottom-[-760px] right-[30px] border-4 border-[#e8b025] rounded-xl w-[170px] h-[175px]">
+                </div> */}
                 <div className="relative bottom-0 right-0 z-0 bg-[#c5c2c2] border-2 border-black rounded-xl md:w-[168px] md:h-[168px] w-60 h-60">
                     <img src={Sam} alt="" className="w-screen h-full" />
                 </div>
@@ -55,6 +59,7 @@ const About = () => {
   
         </div>
     </div>
+    </Zoom>
     )
 }
 
