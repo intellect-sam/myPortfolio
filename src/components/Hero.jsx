@@ -1,5 +1,5 @@
 import { js, css, html, reactlogo, boot, tailwind, code, code2 } from "../assets/images"
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/Bs'
+import {  FaGithub, FaWhatsapp, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/Fa'
 import styles from "../style"
 import Pulse from "react-reveal/Pulse"
 
@@ -25,9 +25,11 @@ const Hero = () => {
             I not only build but also contribute to the aesthetic aspects of the products I work on 👨‍💻
           </p>
           <div className="flex justify-center gap-5 text-2xl font-light md:justify-start md:items-start">
-            <BsGithub />
-            <BsTwitter />
-            <BsLinkedin/>
+            <FaGithub />
+            <FaInstagram />
+            <FaLinkedin/>
+            <FaWhatsapp/>
+            <FaTwitter/>
           </div>
             <div className="py-10">
               <div>
