@@ -17,7 +17,7 @@ const App = () => (
         <div className="min-h-screen md:w-full">
             <Hero />
         </div>
-        <div className="min-h-screen md:w-full ">
+        <div className="max-h-screen md:w-full ">
           <About />
         </div>
 
