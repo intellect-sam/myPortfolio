@@ -1,7 +1,6 @@
 import { js, css, html, reactlogo, boot, tailwind, code, code2 } from "../assets/images"
 import {  FaGithub, FaWhatsapp, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/Fa'
 import styles from "../style"
-import Pulse from "react-reveal/Pulse"
 
 
 
@@ -14,7 +13,6 @@ const Hero = () => {
     
       <img src={code2} alt="" className="absolute md:top-[-450px] top-[-50px] left-[-100px] opacity-10 md:left-[-550px] md:opacity-5 w-1/2 -z-50" />
       <img src={code} alt="" className="absolute md:top-[-200px] top-[250px] left-0 w-[900px] md:w-full opacity-5 md:opacity-10 -z-50"/>
-      <Pulse>
       <div className="justify-center text-center md:mt-0 md:text-left">
           <div className="w-full text-5xl font-bold tracking-wide md:text-8xl font-pop ">
             Aluko O. Samuel.
@@ -57,7 +55,6 @@ const Hero = () => {
               </div>
           </div>
       </div>
-      </Pulse>
 
     </section>
   )
