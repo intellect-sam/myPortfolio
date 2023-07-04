@@ -22,10 +22,9 @@ const About = () => {
                 </p>
                 <p>
                 Throughout my career, I have had the privilege of working collaboratively 
-                in various settings, including a <span className={`${styles.Span}`}>residency agency, a start-up, and a student-led 
-                design</span>
-                . These experiences have provided me with valuable insights and diverse 
-                perspectives.
+                in various settings, including a <span className={`${styles.Span}`}>residency agency, 
+                a start-up, and a student-led design</span>. These experiences have provided 
+                me with valuable insights and diverse perspectives.
                 </p>
                 <p>
                 Currently, my main focus lies in the development of accessible and inclusive 
@@ -48,7 +47,8 @@ const About = () => {
 
                 {/* <div className="absolute md:bottom-[-360px] md:right-[510px] bottom-[-760px] right-[30px] border-4 border-[#e8b025] rounded-xl w-[170px] h-[175px]">
                 </div> */}
-                <div className="relative bottom-0 right-0 z-0 bg-[#c5c2c2] border-2 border-black rounded-xl md:w-[168px] md:h-[168px] w-60 h-60">
+                <div className="relative bottom-0 right-0 z-0 bg-[#c5c2c2] border-2 border-black 
+                                rounded-xl md:w-[168px] md:h-[168px] w-60 h-60">
                     <img src={Sam} alt="" className="w-screen h-full" />
                 </div>
             </div>
